@@ -3,10 +3,21 @@
   "editor.wrappingIndent": "indent",
   "editor.overviewRulerBorder": false,
   "editor.lineHeight": 24,
-  "workbench.colorTheme": "Gray Matter Light",
+  "workbench.colorTheme": "Monokai",
   "[markdown]": {
     "editor.quickSuggestions": true
   },
   "git.enableSmartCommit": true,
-  "git.postCommitCommand": "sync"
+  "git.postCommitCommand": "sync",
+  "foam.openDailyNote.directory": "journal",
+  "foam.openDailyNote.filenameFormat": "'daily-note'-yyyy-mm-dd",
+  "foam.openDailyNote.fileExtension": "md",
+  "foam.openDailyNote.titleFormat": "'Journal Entry, ' dddd, mmmm d",
+  "auto-run-command.rules": [
+    {
+      "condition": "hasFile: .vscode/foam.json",
+      "command": "foam-vscode.open-daily-note",
+      "message": "Have a nice day!"
+    }
+  ],
 }
